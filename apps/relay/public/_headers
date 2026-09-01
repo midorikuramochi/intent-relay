@@ -1,0 +1,4 @@
+/*
+  Content-Security-Policy: default-src 'self'; frame-src https://intent-relay-gather.pages.dev https://intent-relay-orbit.pages.dev; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; object-src 'none'; base-uri 'self'
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin

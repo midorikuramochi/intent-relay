@@ -1,0 +1,41 @@
+{
+  "name": "intent-relay",
+  "description": "Intent Relay \u2014 portable, human-approved intent across WebMCP-enabled websites (prototype)",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -n relay,gather,orbit -c cyan,green,magenta \"npm run dev -w @intent-relay/relay\" \"npm run dev -w @intent-relay/gather\" \"npm run dev -w @intent-relay/orbit\"",
+    "build": "npm run build --workspaces --if-present",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "npm run lint --workspaces --if-present && eslint e2e playwright.config.ts",
+    "typecheck": "npm run typecheck --workspaces --if-present && tsc -p e2e",
+    "test": "npm run test --workspaces --if-present",
+    "test:e2e": "playwright test"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.62.1",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.6",
+    "@types/node": "^26.4.0",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.5",
+    "@vitejs/plugin-react": "^6.1.1",
+    "concurrently": "^10.0.5",
+    "eslint": "^10.9.1",
+    "jsdom": "^30.0.1",
+    "prettier": "^3.9.6",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.68.0",
+    "vite": "^8.2.2",
+    "vitest": "^4.1.11",
+    "zod": "^4.5.2"
+  }
+}

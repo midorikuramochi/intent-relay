@@ -1,0 +1,4 @@
+{
+  "extends": "../tsconfig.base.json",
+  "include": ["./**/*.ts", "../playwright.config.ts", "../apps/relay/src/testing/e2eWindow.d.ts"]
+}

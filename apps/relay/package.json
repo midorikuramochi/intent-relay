@@ -1,0 +1,29 @@
+{
+  "name": "@intent-relay/relay",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src vite.config.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --passWithNoTests"
+  },
+  "dependencies": {
+    "@intent-relay/contracts": "0.1.0",
+    "@intent-relay/mapping": "0.1.0",
+    "@intent-relay/protocol": "0.1.0",
+    "@intent-relay/ui": "0.1.0",
+    "@intent-relay/webmcp": "0.1.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "zod": "^4.5.2"
+  },
+  "devDependencies": {
+    "@intent-relay/fixtures": "0.1.0",
+    "@intent-relay/gather": "0.1.0",
+    "@intent-relay/orbit": "0.1.0"
+  }
+}
