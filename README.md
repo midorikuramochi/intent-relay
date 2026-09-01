@@ -181,6 +181,7 @@ stays visible without it.
 ```sh
 npm run format:check && npm run lint && npm run typecheck && npm run test
 npm run build
+npx playwright install chromium   # one-time browser download for the E2E suite
 npm run test:e2e   # Playwright over the real orchestrator (deterministic test adapter)
 ```
 
